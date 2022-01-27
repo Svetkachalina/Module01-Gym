@@ -1,0 +1,115 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("fonts/Montserrat-Regular.ttf");
+    src: url("fonts/Montserrat-Bold.ttf");
+      
+}
+body {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    color: #2B3541;
+    
+}
+.wrapper {
+    margin: 0 auto; 
+    max-width: 1142px;
+}
+.header-box {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.menu-nav {
+    display: flex;
+    gap: 53px;
+    margin-left: 90px;
+    padding: 0;
+ 
+}
+.menu-nav li {
+    display: flex;
+    
+}
+.menu-nav li:last-child {
+    padding-right: 40px;
+}
+.menu-nav li a {
+    list-style: none;
+    text-decoration: none;
+    color: #2B3541;
+}
+.icon-insta {
+    margin-left: 345px;
+}
+.icon-fb {
+    margin-left: 30px;
+}
+.title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+   
+    padding-top: 240px;
+    max-width: 676px;
+    margin: 0;
+    margin-bottom: 42px;
+}
+.button-count {
+    
+    font-size: 40px;
+    line-height: 125%;
+    /* or 50px */
+    font-weight: 400;
+   
+       
+}
+.description {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+    
+    margin-left: 94px;
+}
+.button {
+    /* display: flex;
+    align-items: center;
+    background-color: transparent;
+    
+    padding: 0;
+    gap: 10px; */
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 30px;
+    margin-left: 94px;
+    margin-top: 17px;
+    border: none;
+    position: absolute;
+    width: 252px;
+    height: 64px;
+    color: #2B3541;
+    text-transform: uppercase;
+    background: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    
+}
+.button-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
