@@ -240,7 +240,7 @@ body {
 .schedule-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 250px 60px 90px 280px;
+    grid-template-rows: 247px 61px 50px 281px;;
     gap: 20px;
 }
 .schedule-grid-item {
@@ -275,6 +275,3 @@ body {
     grid-column: 3 / 4;
     grid-row: 3 / 5;
 }
-/* .schedule-icon:nth-child(1) {
-   
-} */
