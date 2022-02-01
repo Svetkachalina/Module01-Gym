@@ -103,32 +103,37 @@ h3 {
     margin-top: 181px;
 }
 .main-bg {
+    display: flex;
+    /* max-width: 790px; */
+    width: 100%;
     position: absolute;
-    top: 148px;
-    right: 116px;
+    top: 110px;
+    right: -715px;
+    gap: 20px;
+    z-index: -1;
 }
 .bg-left {
-    position: absolute;
-    z-index: -1;
-    width: 535px;
+    max-width: 535px;
     height: 850px;
-    left: 91px;
-    top: -35px;
+    flex-basis: 70%;
     background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
     opacity: 0.2;
 }
 .bg-right {
-    position: absolute;
-    z-index: -1;
-    width: 235px;
+    max-width: 235px;
     height: 850px;
-    left: 610px;
-    top: -35px;
+    flex-basis: 30%;
     background: linear-gradient(90deg, #FDF9B6 0%, rgba(253, 249, 182, 0.7) 166.81%);
     opacity: 0.2;
-    margin-left: 30px;
 }
+.main-img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    margin-top: 41px;
+    margin-left: -95px;
 
+}
 .title-events {
     margin-top: 158px;
     margin-bottom: 44px;
@@ -238,6 +243,14 @@ h3 {
     grid-template-rows: 249px 36px 75px 280px;
     gap: 20px;
 }
+.hidden {
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.3s linear;
+}
+.schedule-grid:hover .hidden {
+    max-height: 600px;
+}
 .schedule-grid-item {
     border: 1px solid rgba(43, 53, 65, .4); 
     display: flex;
@@ -247,8 +260,7 @@ h3 {
 }
 .schedule-grid-item:nth-child(1) {
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
-   
+    grid-row: 1 / 2;  
 }
 .schedule-grid-item:nth-child(2) {
     grid-column: 2 / 3;
@@ -262,8 +274,7 @@ h3 {
     grid-column: 1 / 2;
     grid-row: 2 / 5;
     border: none;
-    background: linear-gradient(180deg, rgba(251, 241, 56, 1), rgba(253, 249, 182, 0) 100%);
-   
+    background: linear-gradient(180deg, rgba(251, 241, 56, 1), rgba(253, 249, 182, 0) 100%); 
 }
 .schedule-grid-item:nth-child(5) {
     grid-column: 2 / 3;
@@ -522,4 +533,14 @@ a {
     color: #2B3541;
     opacity: .3;
     padding-bottom: 20px;
+}
+/* Responsive  */
+@media (max-width: 1490px) {
+    .main-bg {
+        top: 119px;
+        right: -500px;
+    }
+}
+@media (max-width: 1270px) {
+    
 }
