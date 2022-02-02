@@ -146,6 +146,7 @@ h3 {
     height: 850px;
     background: linear-gradient(90deg, #FDF9B6 0%, rgba(253, 249, 182, 0.7) 166.81%);
     opacity: 0.2;
+    flex-basis: 30%;
 }
 .main-img {
     position: absolute;
