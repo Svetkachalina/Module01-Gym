@@ -122,12 +122,12 @@ h3 {
 
 .main-bg {
     display: flex;
-    max-width: 950px;
+    max-width: 800px;
     position: relative;
     margin: 0 auto;
     height: 46vw;
     top: -855px;
-    right: -345px;
+    right: -250px;
     gap: 20px;
     z-index: -1;
 }
@@ -147,7 +147,7 @@ h3 {
     height: 100%;
     margin: 0 auto;
     object-fit: cover;
-    left: -180px;
+    left: -85px;
     top: 40px;
     right: 0;
 }
