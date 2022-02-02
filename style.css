@@ -121,40 +121,41 @@ h3 {
     margin-top: 181px;
     background-color: transparent;
 }
-
+.main-flex {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
 .main-bg {
     display: flex;
-    max-width: 800px;
-    position: relative;
-    margin: 0 auto;
-    height: 46vw;
-    top: -825px;
-    right: -250px;
+    position: absolute;
+    top: 10px;
+    right: -60px;
+    max-width: 790px;
+    width: 100%;
     gap: 20px;
     z-index: -1;
 }
 .bg-left {
     background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
     opacity: 0.2;
-    flex-grow: 1;
+    flex-basis: 70%;
+    height: 850px;
 }
 .bg-right {
-    height: 100%;
-    flex-basis: 30%;
+    height: 850px;
     background: linear-gradient(90deg, #FDF9B6 0%, rgba(253, 249, 182, 0.7) 166.81%);
     opacity: 0.2;
 }
 .main-img {
     position: absolute;
-    height: 100%;
-    margin: 0 auto;
-    object-fit: cover;
+    height: 809px;
     left: -85px;
-    top: 10px;
-    right: 0;
+    top: 40px;
+    width: 984px;
 }
 .title-events {
-    margin-top: 0;
+    margin-top: 155px;
     margin-bottom: 44px;
 }
 .flex-events {
@@ -240,7 +241,7 @@ h3 {
 .schedule-title-main {
     font-size: 40px;
     font-weight: 700;
-    margin-bottom: 40px;
+    margin-bottom: 44px;
 }
 .schedule-title-date {
     font-size: 28px;
@@ -344,7 +345,7 @@ h3 {
     transition: 0.3s;
 }
 .subscribe {
-    margin-top: 160px;
+    margin-top: 165px;
     background-color: #F3F3F3;
     height: 348px;
 }
@@ -604,13 +605,13 @@ a {
     padding-bottom: 20px;
 }
 /* Responsive  */
-/* @media (max-width: 1490px) {
+@media (max-width: 1490px) {
     .main-bg {
         top: 119px;
         right: -500px;
     }
-} */
-/* For mobile */
+}
+/* For mobile
 /* @media (max-width: 360px) {
     .main-bg {
         display: flex;
@@ -622,25 +623,4 @@ a {
         right: -345px;
         gap: 20px;
         z-index: -1;
-    }
-    .bg-left {
-        background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
-        opacity: 0.2;
-        flex-grow: 1;
-    }
-    .bg-right {
-        height: 100%;
-        flex-basis: 30%;
-        background: linear-gradient(90deg, #FDF9B6 0%, rgba(253, 249, 182, 0.7) 166.81%);
-        opacity: 0.2;
-    }
-    .main-img {
-        position: absolute;
-        height: 100%;
-        margin: 0 auto;
-        object-fit: cover;
-        left: -180px;
-        top: 40px;
-        right: 0;
-    }
-} */
+    } */
