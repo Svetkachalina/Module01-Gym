@@ -78,6 +78,7 @@ h3 {
 .button-count {
     font-size: 40px;
     line-height: 125%;    
+    
 }
 .description {
     font-size: 18px;
@@ -118,6 +119,7 @@ h3 {
     cursor: pointer;
     border: none;
     margin-top: 181px;
+    background-color: transparent;
 }
 
 .main-bg {
