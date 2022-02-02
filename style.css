@@ -32,11 +32,9 @@ h3 {
     gap: 53px;
     margin-left: 90px;
     padding: 0;
- 
 }
 .menu-nav li {
-    display: flex;
-    
+    display: flex;  
 }
 .menu-nav li:last-child {
     padding-right: 30px;
@@ -46,14 +44,26 @@ h3 {
     text-decoration: none;
     color: #2B3541;
 }
+.menu-nav li a:hover {
+    border-bottom: 1px solid #2B3541;
+}
 .icon-social {
-    display: inline;
+    display: flex;
     margin-left: 355px;
+    transition: 0.3s;
+    transform: scale(1);   
 }
 .fb {
     margin-left: 30px;
 }
-
+.insta:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+.fb:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
 .title {
     font-weight: 700;
     font-size: 48px;
@@ -66,7 +76,6 @@ h3 {
     margin-bottom: 42px;
 }
 .button-count {
-    
     font-size: 40px;
     line-height: 125%;    
 }
@@ -97,46 +106,53 @@ h3 {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
+.button:hover {
+    background: #2B3541;
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
+    transition: 0.3s ease;
+}
+.button-text:hover {
+    color: #FBF138;
+}
 .button-arrow {
     cursor: pointer;
     border: none;
     margin-top: 181px;
 }
+
 .main-bg {
     display: flex;
-    /* max-width: 790px; */
-    width: 100%;
-    position: absolute;
-    top: 110px;
-    right: -715px;
+    max-width: 950px;
+    position: relative;
+    margin: 0 auto;
+    height: 46vw;
+    top: -855px;
+    right: -345px;
     gap: 20px;
     z-index: -1;
 }
 .bg-left {
-    max-width: 535px;
-    height: 850px;
-    flex-basis: 70%;
     background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
     opacity: 0.2;
+    flex-grow: 1;
 }
 .bg-right {
-    max-width: 235px;
-    /* height: 850px; */
-    height: auto;
+    height: 100%;
     flex-basis: 30%;
     background: linear-gradient(90deg, #FDF9B6 0%, rgba(253, 249, 182, 0.7) 166.81%);
     opacity: 0.2;
 }
 .main-img {
     position: absolute;
-    max-width: 100%;
-    height: auto;
-    margin-top: 41px;
-    margin-left: -95px;
-
+    height: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+    left: -180px;
+    top: 40px;
+    right: 0;
 }
 .title-events {
-    margin-top: 158px;
+    margin-top: 0;
     margin-bottom: 44px;
 }
 .flex-events {
@@ -380,9 +396,15 @@ placeholder {
     font-size: 16px;
     font-weight: 700;
     color: rgba(43, 53, 65, 1);
-    text-transform: uppercase;
-    
+    text-transform: uppercase; 
 }
+.subscribe-btn:hover {
+    background: #2B3541;
+    color: #FBF138;
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
+    transition: 0.3s ease;
+}
+
 .input-checkbox {
     display: inline;
     margin-left: 270px;
@@ -491,8 +513,13 @@ a {
     color: rgba(43, 53, 65, 1);
     text-transform: uppercase;
 }
+.enroll-btn:hover {
+    background: #2B3541;
+    color: #FBF138;
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
+    transition: 0.3s ease;
+}
 .summary-item-2 {
-   
     background-image: url("png/trainer.png");
     background-size: cover;
     background-position: center;
@@ -515,7 +542,6 @@ a {
     justify-content: space-between;
     gap: 103px;
     margin-top: 60px;
-
 }
 .footer {
     margin-top: 150px;
@@ -576,12 +602,43 @@ a {
     padding-bottom: 20px;
 }
 /* Responsive  */
-@media (max-width: 1490px) {
+/* @media (max-width: 1490px) {
     .main-bg {
         top: 119px;
         right: -500px;
     }
-}
-@media (max-width: 1270px) {
-    
-}
+} */
+/* For mobile */
+/* @media (max-width: 360px) {
+    .main-bg {
+        display: flex;
+        max-width: 950px;
+        position: relative;
+        margin: 0 auto;
+        height: 46vw;
+        top: -855px;
+        right: -345px;
+        gap: 20px;
+        z-index: -1;
+    }
+    .bg-left {
+        background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+        opacity: 0.2;
+        flex-grow: 1;
+    }
+    .bg-right {
+        height: 100%;
+        flex-basis: 30%;
+        background: linear-gradient(90deg, #FDF9B6 0%, rgba(253, 249, 182, 0.7) 166.81%);
+        opacity: 0.2;
+    }
+    .main-img {
+        position: absolute;
+        height: 100%;
+        margin: 0 auto;
+        object-fit: cover;
+        left: -180px;
+        top: 40px;
+        right: 0;
+    }
+} */
