@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+    <header id="headerTop" class="header">
         <div class="wrapper">
             <div class="header-box">
                 <div class="header-icon">
@@ -38,16 +38,15 @@
                 <div class="main-flex">
                     <div class="main-left">
                         <h1 class="title">онлайн тренировки любой сложности</h1>
-                    <span class="button-item">
-                    <span class="button-count">&gt 15 тренировок</span>
-                    <p class="description">в области спортивной<br> физиологии и нутрициологии</p>
-                    </span>
-                    <button type="button" class="button">
-                        <span class="button-text">узнать подробнее</span>
-                    </button>
-                    <button type="button" class="button-arrow">
-                        <img src="icons/Arrow.svg" alt="arrow">
-                    </button>
+                        <span class="button-count">&gt 15</span>
+                        <span class="button-count-text">тренировок</span>
+                        <div class="button-item">
+                            
+                            <p class="description">в области спортивной<br> физиологии и нутрициологии</p>
+                            <a class="button" href="#section-events">узнать подробнее</a>
+                        </div>
+                        
+                        <a class="button-arrow" href="#section-events"><img src="icons/Arrow.svg" alt="arrow"></a>
                     </div>
                     <div class="main-bg">
                         <div class="bg-left"></div>
@@ -58,7 +57,7 @@
                 
            </div>
         </section>
-        <section class="section-events">
+        <section class="section-events" id="section-events">
            <div class="wrapper">
             <h2 class="title-events">Ближайшие события</h2>
             <div class="flex-events">
@@ -138,7 +137,7 @@
                 <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
                 <div class="agreement">
                     <form action="">
-                        <input class="email" type="email" placeholder="Ваш e-mail">
+                        <input class="input-email" type="email" placeholder="Ваш e-mail" required/>
                         <button class="subscribe-btn" type="submit">подписаться</button>
                     </form>
                     <div class="input-checkbox">
@@ -187,23 +186,19 @@
         <footer class="footer">
             <div class="wrapper">
                 <div class="footer-box">
-                    <div class="flex-item footer-icon">
+                    <div class="footer-icon">
                         <a href="/"><img src="icons/logo.svg" alt="Logo"></a>   
                     </div>
-                    <div class="flex-item footer-nav">
-                        <nav>
-                            <ul>
-                                <li><a href="#">Мероприятия</a></li>
-                                <li><a href="#">Расписание</a></li>
-                                <li><a href="#">О&nbsp;компании</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <p class="flex-item footer-email"><a href="mailto:info@freefit.com">info@freefit.com</a></p>
-                    <div class="flex-item footer-icon-social">
-                        <img class="insta" src="icons/IN.svg" alt="Instagram">
-                        <img class="fb" src="icons/FB.svg" alt="Facebook">
-                    </div>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#">Мероприятия</a></li>
+                            <li><a href="#">Расписание</a></li>
+                            <li><a href="#">О&nbsp;компании</a></li>
+                        </ul>
+                    </nav>
+                    <p class="footer-email"><a href="mailto:info@freefit.com">info@freefit.com</a></p>
+                    <img class="insta" src="icons/IN.svg" alt="Instagram">
+                    <img class="fb" src="icons/FB.svg" alt="Facebook">
                     
                 </div>
                 <div class="copyright">
@@ -212,6 +207,55 @@
                 </div>
             </div>
         </footer>
+        <a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a><a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
+        
     </main>
+    <script>
+
+         // Button UP
+
+         
+window.onscroll = function(){scrollFunction()};
+
+const upbuttons = document.querySelectorAll(".button-up");
+
+for (const upbutton of upbuttons) {
+    upbutton.addEventListener("click", clickHandler);
+}
+
+function clickHandler(e) {
+    e.preventDefault();
+    const href = this.getAttribute("href");
+
+    document.querySelector(href).scrollIntoView({
+    behavior: "smooth"
+});
+}
+
+function scrollFunction(){
+    if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
+        document.getElementById('btnUp').className = 'button-up visible';
+    } else {
+        document.getElementById('btnUp').className = 'button-up hidden';
+    }
+}
+// Smooth Scroll
+      
+       const links = document.querySelectorAll(".button-arrow");
+
+       for (const link of links) {
+       link.addEventListener("click", clickHandler);
+       }
+
+       function clickHandler(e) {
+       e.preventDefault();
+       const href = this.getAttribute("href");
+
+       document.querySelector(href).scrollIntoView({
+           behavior: "smooth"
+       });
+       }
+
+    </script>
 </body>
 </html>
