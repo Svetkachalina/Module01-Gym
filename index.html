@@ -16,7 +16,10 @@
         <div class="wrapper">
             <div class="header-box">
                 <div class="header-icon">
-                    <a href="/"><img src="icons/logo.svg" alt="Logo"></a>
+                    <a href="/"><img src="icons/logo.svg" alt="Logo"></a>                    
+                </div>
+                <div class="header-burger">
+                    <button class="burger-btn" onclick="openModal()"></button>
                 </div>
                 <nav>
                     <ul class="menu-nav">
@@ -25,6 +28,7 @@
                         <li><a class="menu-link" href="#">О&nbsp;компании</a></li>
                     </ul>
                 </nav>
+               
                 <div class="icon-social">
                     <a href="#"><img class="insta" src="icons/IN.svg" alt="Instagram"></a>
                     <a href=""><img class="fb" src="icons/FB.svg" alt="Facebook"></a>
@@ -67,6 +71,7 @@
                         <h2 class="title-event">Марафон<br> выносливости</h2>
                         <a href="#" class="button-participate">Участвовать</a>
                         <p class="type">марафон</p>
+                        <button class="plus"></button>
                     </div>
                 </div>  
                 <div class="box-events box-event-2">
@@ -75,6 +80,7 @@
                         <h2 class="title-event">Как стать<br> тренером?</h2>
                         <a href="#" class="button-participate">Участвовать</a>
                         <p class="type">вебинар</p>
+                        <button class="plus"></button>
                     </div>
                 </div>  
                 <div class="box-events box-event-3">
@@ -83,6 +89,7 @@
                         <h2 class="title-event">Йога, как стиль<br> жизни</h2>
                         <a href="#" class="button-participate">Участвовать</a>
                         <p class="type">вебинар</p>
+                        <button class="plus"></button>
                     </div>
                 </div>
             </div>
@@ -98,50 +105,56 @@
                     <div class="schedule-grid-item">
                         <p class="schedule-date">22 июня, 10:00</p>
                         <div class="schedule-card">
-                            <img class="schedule-icon-1" src="icons/body.svg" alt="Функциональный тренинг">
+                            <img class="schedule-icon schedule-icon-1" src="icons/body.svg" alt="Функциональный тренинг">
                             <h3 class="schedule-title">Функциональный тренинг</h3>
+                          
                         </div>
-                        <p class="schedule-description-1">Развивает в мышцах силу, гибкость и тонус</p>
+                        <p class="schedule-description schedule-description-1">Развивает в мышцах силу, гибкость и тонус</p>
                     </div>
                     <div class="schedule-grid-item">
                         <p class="schedule-date">24 июня, 10:00</p>
                         <div class="schedule-card">
-                            <img class="schedule-icon-2" src="icons/bottle.svg" alt="Body sculpt">
+                            <img class="schedule-icon schedule-icon-2" src="icons/bottle.svg" alt="Body sculpt">
                             <h3 class="schedule-title">Body sculpt</h3> 
+                                               
                         </div> 
-                        <p class="schedule-description-2">Разноплановая нагрузка помогает укрепить мышцы и снизить количество жировых отложений</p>                       
+                        <p class="schedule-description schedule-description-2">Разноплановая нагрузка помогает укрепить мышцы и снизить количество жировых отложений</p>    
                     </div>
                     <div class="schedule-grid-item">
                         <p class="schedule-date">26 июня, 11:00</p>
                         <div class="schedule-card">
-                            <img class="schedule-icon-3" src="icons/dumbbell.svg" alt="L.A.B.">
-                            <h3 class="schedule-title">L.A.B.</h3>
+                            <img class="schedule-icon schedule-icon-3" src="icons/dumbbell.svg" alt="L.A.B.">
+                            <h3 class="schedule-title schedule-title-2">L.A.B.</h3>
+                            
                         </div>
-                        <p class="schedule-description-3">Силовая тренировка с акцентом на мышцы ягодиц, ног и пресса</p>
+                        <p class="schedule-description schedule-description-3">Силовая тренировка с акцентом на мышцы ягодиц, ног и пресса</p>
                     </div>
                     <div class="active schedule-grid-item">
                         <p class="schedule-date">23 июня, 10:00</p>
                         <div class="schedule-card">
-                            <img class="schedule-icon-4" src="icons/jump.svg" alt="Силовой микс">
+                            <img class="schedule-icon schedule-icon-4" src="icons/jump.svg" alt="Силовой микс">
                             <h3 class="schedule-title">Силовой микс</h3>
+                            
                         </div>
-                        <p class="schedule-description-4">Упражнения помогут создать красивый рельеф и&nbsp;прийти в&nbsp;спортивную форму</p>
+                        <p class="schedule-description schedule-description-4">Упражнения помогут создать красивый рельеф и&nbsp;прийти в&nbsp;спортивную форму</p>
                     </div>
                     <div class="schedule-grid-item">
                         <p class="schedule-date">25 июня, 11:00</p>
                         <div class="schedule-card">
-                            <img class="schedule-icon-5" src="icons/heart.svg" alt="Дыхательные практики">
+                            <img class="schedule-icon schedule-icon-5" src="icons/heart.svg" alt="Дыхательные практики">
                             <h3 class="schedule-title">Дыхательные практики</h3>
+                            
                         </div>
-                        <p class="schedule-description-5">Поможет прояснить ум и избавить организм от гормонов стресса</p>
+                        <p class="schedule-description schedule-description-5">Поможет прояснить ум и избавить организм от гормонов стресса</p>
                     </div>
                     <div class="schedule-grid-item">
                         <p class="schedule-date">27 июня, 10:00</p>
                         <div class="schedule-card">
-                            <img class="schedule-icon-6" src="icons/weight.svg" alt="Комплексная разминка">
+                            <img class="schedule-icon schedule-icon-6" src="icons/weight.svg" alt="Комплексная разминка">
                             <h3 class="schedule-title">Комплексная разминка</h3>
+                            
                         </div>
-                        <p class="schedule-description-6">Подготовка тела перед физической нагрузкой</p>
+                        <p class="schedule-description schedule-description-6">Подготовка тела перед физической нагрузкой</p>
                     </div>
                 </div>
             </div>
@@ -211,6 +224,15 @@
                             <li><a href="#">О&nbsp;компании</a></li>
                         </ul>
                     </nav>
+                    <div class="footer-social">
+                        <p class="footer-email"><a href="mailto:info@freefit.com">info@freefit.com</a></p>
+                    <div class="footer-icon-social">
+                        <a href=""><img class="insta" src="icons/IN.svg" alt="Instagram"></a>
+                        <a href=""><img class="fb" src="icons/FB.svg" alt="Facebook"></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="footer-social-mobile">
                     <p class="footer-email"><a href="mailto:info@freefit.com">info@freefit.com</a></p>
                     <div class="footer-icon-social">
                         <a href=""><img class="insta" src="icons/IN.svg" alt="Instagram"></a>
@@ -226,52 +248,101 @@
         <a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a><a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
         
     </main>
-    <script>
 
-         // Button UP
 
-         
+<!-- Burger-Modal-786 top  -->
+
+<div class="modal" id="modal" style="top: 0px">
+    <div class="modal-header">
+        <div class="modal-items">
+            <div class="header-icon">
+                <a href="/"><img src="icons/logo.svg" alt="Logo"></a>
+            </div>
+            <nav>
+                <ul class="modal-nav">
+                    <li><a class="nav-link" href="">Мероприятия</a></li>
+                    <li><a class="nav-link" href="">Расписание</a></li>
+                    <li><a class="nav-link" href="">О компании</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        <button class="burger-close" onclick="closeModal()"></button>
+        <div class="footer-icon-social">
+            <a href=""><img class="insta" src="icons/IN.svg" alt="Instagram"></a>
+            <a href=""><img class="fb" src="icons/FB.svg" alt="Facebook"></a>
+        </div>
+    </div>
+    <div class="modal-dark"></div>
+    
+</div>
+
+
+<script>
+
+    // Button UP
+
+    
 window.onscroll = function(){scrollFunction()};
 
 const upbuttons = document.querySelectorAll(".button-up");
 
 for (const upbutton of upbuttons) {
-    upbutton.addEventListener("click", clickHandler);
+upbutton.addEventListener("click", clickHandler);
 }
 
 function clickHandler(e) {
-    e.preventDefault();
-    const href = this.getAttribute("href");
+e.preventDefault();
+const href = this.getAttribute("href");
 
-    document.querySelector(href).scrollIntoView({
-    behavior: "smooth"
+document.querySelector(href).scrollIntoView({
+behavior: "smooth"
 });
 }
 
 function scrollFunction(){
-    if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
-        document.getElementById('btnUp').className = 'button-up visible';
-    } else {
-        document.getElementById('btnUp').className = 'button-up hidden';
-    }
+if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
+   document.getElementById('btnUp').className = 'button-up visible';
+} else {
+   document.getElementById('btnUp').className = 'button-up hidden';
+}
 }
 // Smooth Scroll
-      
-       const links = document.querySelectorAll(".button-arrow");
+ 
+  const links = document.querySelectorAll(".button-arrow");
 
-       for (const link of links) {
-       link.addEventListener("click", clickHandler);
-       }
+  for (const link of links) {
+  link.addEventListener("click", clickHandler);
+  }
 
-       function clickHandler(e) {
-       e.preventDefault();
-       const href = this.getAttribute("href");
+  function clickHandler(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
 
-       document.querySelector(href).scrollIntoView({
-           behavior: "smooth"
-       });
-       }
+  document.querySelector(href).scrollIntoView({
+      behavior: "smooth"
+  });
+  }
 
-    </script>
+//Pop-up
+
+function openPopUp() {
+    document.getElementById("pop-up").style.display = "block";
+}
+
+function closePopUp() {
+    document.getElementById("pop-up").style.display = "none";
+}
+
+  // Burger-Menu
+  function openModal() {
+            document.getElementById("modal").style.top = "0px";
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.top = "-400px";
+        } 
+
+</script>
 </body>
 </html>
