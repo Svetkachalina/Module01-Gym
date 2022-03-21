@@ -183,7 +183,7 @@
                     <div class="summary-item-1">
                         <h2 class="company-title">О компании</h2>
                         <p class="summary-text">Наша компания является одной из&nbsp;немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с&nbsp;нами и&nbsp;вы&nbsp;сами увидите, что мы&nbsp;проводим не&nbsp;только онлайн-тренировки.</p>
-                        <button type="button" class="enroll-btn">записаться</button>
+                        <button type="button" class="enroll-btn" onclick="openModalReg()">записаться</button>
                     </div>
                     <div class="summary-item-2">
                         <div class="trainer-gradient"></div> 
@@ -274,7 +274,23 @@
         </div>
     </div>
     <div class="modal-dark"></div>
-    
+</div>
+
+<!-- Modal registration -->
+
+<div class="modal-reg" id="modal-reg" style="display: none;">
+    <div class="modal-reg-box">
+        <div class="reg-header">
+            <h3 class="reg_title">Заявка на участие «Марафон выносливости»</h3>
+            <p class="reg_text">Заполните все поля, и мы пришлем информацию в ближайшее время</p>
+        </div>
+        <form action="#" class="modal-reg-form">
+            <input class="reg-mail" type="email" placeholder="Ваш e-mail" required>
+            <input class="reg-tel" type="tel" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" placeholder="Ваш номер телефона" required>
+            <button type="submit">Отправить</button>
+        </form>
+        <button class="reg-close" onclick="closeModalReg()"></button>
+    </div>
 </div>
 
 
@@ -342,6 +358,15 @@ function closePopUp() {
         function closeModal() {
             document.getElementById("modal").style.top = "-400px";
         } 
+
+        //Modal Registration
+
+        function openModalReg() {
+            document.getElementById("modal-reg").style.display = "block";
+        }
+        function closeModalReg() {
+            document.getElementById("modal-reg").style.display = "none";
+        }
 
 </script>
 </body>
